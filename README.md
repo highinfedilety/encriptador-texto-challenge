@@ -1,25 +1,29 @@
-# Encriptador de Texto
+# 🔐 Encriptador de Texto | Challenge Alura + Oracle
 
 Este repositorio contiene un proyecto de encriptador de texto que permite cifrar y descifrar mensajes utilizando una técnica de encriptación simple. Este proyecto está diseñado para practicar habilidades de programación y mejorar la experiencia del usuario con características adicionales.
 
-## Descripción
+## Modo Claro ☀️
+
+![encrypt-day](https://github.com/user-attachments/assets/49628533-bc5d-4724-8b67-cbe77dbe62e5)
+
+## 💬 Descripción
 
 El encriptador de texto permite convertir un mensaje en su versión encriptada y también devolver un mensaje encriptado a su versión original. Además, incluye varias funcionalidades para mejorar la usabilidad y la apariencia de la aplicación.
 
-## Funcionalidades
+## ✅ Funcionalidades
 
 - **Modo Oscuro Automático**: La aplicación cambia automáticamente al modo oscuro según la configuración del sistema del usuario.
 - **Botones de Limpiar y Copiar**: Incluye botones para limpiar el texto ingresado y copiar el texto encriptado o desencriptado al portapapeles.
 - **Modo Responsive**: La interfaz de usuario es completamente responsive y se adapta a diferentes tamaños de pantalla.
 - **Efectos de Máquina de Escribir en el Título**: El título de la aplicación tiene un efecto de máquina de escribir para hacerlo más dinámico y atractivo.
 
-## Requisitos
+## ☑️ Requisitos
 
 - Debe funcionar solo con letras minúsculas.
 - No deben utilizarse letras con acentos ni caracteres especiales.
 - Debe ser posible convertir una palabra en su versión encriptada y también devolver una palabra encriptada a su versión original.
 
-## Funcionamiento
+## ✅ Funcionamiento
 
 ### Encriptación
 
@@ -50,6 +54,10 @@ Ejemplo: "gaitober" => "gato"
 - HTML
 - CSS
 - JavaScript
+
+## Modo Oscuro 🌑
+
+![encrypt-night](https://github.com/user-attachments/assets/e70111ab-0ae5-43cc-b163-ecd653cb6245)
 
 ## Autor
 
