@@ -56,6 +56,23 @@
     </div>
 </footer>
 
+<script>
+    // Script para aplicar el modo oscuro/claro basado en la preferencia del sistema
+    function applyTheme() {
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark-mode');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+        }
+    }
+
+    // Escucha los cambios en la preferencia del sistema
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+
+    // Aplicar el tema en la carga inicial de la página
+    applyTheme();
+</script>
 
 <script src="./js/main_script.js"></script>
 

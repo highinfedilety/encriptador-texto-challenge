@@ -1,1 +1,0 @@
-const textArea = document.getElementById('textArea');

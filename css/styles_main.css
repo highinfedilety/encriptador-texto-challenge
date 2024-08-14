@@ -52,10 +52,13 @@ section {
     align-items: center;
     width: 100%;
     margin: 10px;
+    border-radius: 20px;
 }
 
 .input-section, .output-section {
     width: 48%;
+    border-radius: 20px;
+    border: none;
 }
 
 .text-area, .message {
@@ -206,3 +209,80 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* Modo Oscuro */
+
+@media (prefers-color-scheme: dark) {
+    * {
+        background: #2E2C3B;
+        color: #EDECF3;
+    }
+
+    body {
+        background-color: #2E2C3B;
+    }
+
+    .header-title {
+        color: #9A8BFF;
+    }
+
+    main {
+        background-color: #3C3A4F;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-area, .message {
+        border: 2px solid #8C7AE6;
+        color: #EDECF3;
+        background-color: #3C3A4F;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+    }
+
+    .text-area::placeholder, .message::placeholder {
+        color: #8C7AE6;
+    }
+
+    .text-area:focus, .message:focus {
+        border-color: #9A8BFF;
+        box-shadow: 0 0 10px rgba(154, 139, 255, 0.5);
+    }
+
+    .info {
+        color: #C1BFF1;
+    }
+
+    button {
+        background: #6454C0;
+    }
+
+    button:hover {
+        background: #9A8BFF;
+    }
+
+    .btn-encrypt {
+        background: #6454C0;
+    }
+
+    .btn-decrypt {
+        background: #9A8BFF;
+    }
+
+    .btn-copy, .btn-clear {
+        background: #514791;
+    }
+
+    .btn-copy:hover, .btn-clear:hover {
+        background: #6454C0;
+    }
+
+    .footer {
+        color: #C1BFF1;
+    }
+
+    .footer-content {
+        color: #C1BFF1;
+    }
+}
+
+
