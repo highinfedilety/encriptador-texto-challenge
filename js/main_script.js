@@ -87,11 +87,30 @@ function btnClear() {
 
 // Codigo para cambiar el titulo y añadir el efecto de maquina de escribir: header-title
 const headerTitle = document.querySelector('.header-title');
-const titles = ["Text Encryptor", "Encrypt your text!", "Decrypt your text and more!"];
+const titles = ["Text Encryptor", "Encrypt your text!", "Decrypt your text!"];
 let titleIndex = 0;
+let charIndex = 0;
+let currentTitle = '';
+let isDeleting = false;
 
-setInterval(() => {
-    titleIndex = (titleIndex + 1) % titles.length;
-    headerTitle.textContent = titles[titleIndex];
+function typeEffect() {
+    if (!isDeleting && charIndex < titles[titleIndex].length) {
+        currentTitle += titles[titleIndex].charAt(charIndex);
+        charIndex++;
+        headerTitle.textContent = currentTitle;
+        setTimeout(typeEffect, 100);
+    } else if (isDeleting && charIndex > 0) {
+        currentTitle = currentTitle.substring(0, charIndex - 1);
+        charIndex--;
+        headerTitle.textContent = currentTitle;
+        setTimeout(typeEffect, 50);
+    } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+            titleIndex = (titleIndex + 1) % titles.length;
+        }
+        setTimeout(typeEffect, 1000);
+    }
 }
-, 2000);
+
+typeEffect();

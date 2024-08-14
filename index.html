@@ -29,7 +29,7 @@
 
     <!-- Sección del Resultado -->
     <section class="output-section">
-        <textarea class="message" placeholder="Aquí aparecerá el texto encriptado/desencriptado..." cols="30" rows="10"></textarea>
+        <textarea class="message" placeholder="Ingrese el texto que desees encriptar o desencriptar" cols="30" rows="10"></textarea>
         <div>
             <h6 class="info"> Copia el texto generado :)</h6>
         </div>
@@ -56,23 +56,8 @@
     </div>
 </footer>
 
-<script>
-    // Script para aplicar el modo oscuro/claro basado en la preferencia del sistema
-    function applyTheme() {
-        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (isDarkMode) {
-            document.documentElement.classList.add('dark-mode');
-        } else {
-            document.documentElement.classList.remove('dark-mode');
-        }
-    }
-
-    // Escucha los cambios en la preferencia del sistema
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
-
-    // Aplicar el tema en la carga inicial de la página
-    applyTheme();
-</script>
+<!--Scripts-->
+<script src="./js/theme_mode.js"></script>
 
 <script src="./js/main_script.js"></script>
 
